@@ -107,16 +107,19 @@ born in the 1500's.
   the years 1500 and 1599.
 */
 
-let veryOldInventors = inventors.filter()
+
 
 // Complete the exercise in the space below:
+let veryOldInventors = inventors.filter((inventor) => {
+    return inventor.year >=1500 && inventor.year <=1599
+})
 
 // Check your work:
-console.log('Exercise 1 my result: ', veryOldInventors);
-console.log('Exercise 1 correct result: ', [
-  { first: 'Galileo', last: 'Galilei', year: 1564, passed: 1642 },
-  { first: 'Johannes', last: 'Kepler', year: 1571, passed: 1630 },
-])
+// console.log('Exercise 1 my result: ', veryOldInventors);
+// console.log('Exercise 1 correct result: ', [
+//   { first: 'Galileo', last: 'Galilei', year: 1564, passed: 1642 },
+//   { first: 'Johannes', last: 'Kepler', year: 1571, passed: 1630 },
+// ])
 
 
 //Exercise 2: Array.prototype.map()
