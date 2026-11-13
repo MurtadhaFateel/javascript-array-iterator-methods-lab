@@ -312,17 +312,6 @@ a specific ID 823423 from an array of comment objects.
 - Assign the found comment object to the variable 'commentById'.
 */
 
-/*
-const comments = [
-  { text: 'Love this!', id: 523423 },
-  { text: 'Super good', id: 823423 },
-  { text: 'You are the best', id: 2039842 },
-  { text: 'Ramen is my fav food ever', id: 123523 },
-  { text: 'Nice Nice Nice!', id: 542328 },
-];
-
- */
-
 // Complete the exercise in the space below:
 let commentById = comments.find((id) => {
   return id.id===823423
@@ -342,12 +331,13 @@ of comment objects.
 - Store the index in the variable 'idx'.
 */
 
-let idx = null;
-
 // Complete the exercise in the space below:
+let idx = comments.findIndex((idNum) => {
+  return  idNum.id===123523
+})
 
 // Check your work:
-console.log('Exercise 9 my result: ', idx);
-console.log('Exercise 9 correct result: ', 3);
+// console.log('Exercise 9 my result: ', idx);
+// console.log('Exercise 9 correct result: ', 3);
 
 
